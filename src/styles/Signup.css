@@ -1,0 +1,166 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Đảm bảo khung ở giữa chiều dọc */
+  padding: 30px;
+  margin-top: -47px;
+  background: #f1f3f5;
+}
+
+.signup-form-container {
+  width: 100%;
+  max-width: 400px; /* Giữ kích thước vừa phải */
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.signup-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.signup-subtitle {
+  font-size: 15px;
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.login-link {
+  color: #ff6b35;
+  font-weight: 600;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Giảm gap để gọn hơn */
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Chia "Họ" và "Tên" thành 2 cột */
+  gap: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 14px; /* Giảm padding để tiết kiệm không gian */
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.2);
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  background: #ff6b35;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.signup-button:hover {
+  background: #e55a2d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 107, 53, 0.2);
+}
+
+.social-login {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-text {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.facebook-button {
+  background: #1877f2;
+}
+
+.facebook-button:hover {
+  background: #1566d8;
+}
+
+.google-button {
+  background: #ea4335;
+}
+
+.google-button:hover {
+  background: #d7382a;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .signup-form-container {
+    padding: 25px;
+    max-width: 340px;
+  }
+
+  .signup-title {
+    font-size: 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr; /* Chuyển thành 1 cột trên mobile */
+  }
+
+  .form-input,
+  .signup-button {
+    font-size: 13px;
+  }
+}
