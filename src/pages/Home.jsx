@@ -68,7 +68,7 @@ const Home = () => {
               className="banner-image"
             />
             <div className="banner-overlay">
-              <h3 className="banner-title">BST Xuân 2024</h3>
+              <h3 className="banner-title">BST Xuân 2025</h3>
               <p className="banner-text">Phong cách thanh lịch, hiện đại</p>
             </div>
           </div>

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Đảm bảo khung ở giữa chiều dọc */
+  min-height: 100vh;
   padding: 30px;
   margin-top: -47px;
   background: #f1f3f5;
@@ -10,7 +10,7 @@
 
 .signup-form-container {
   width: 100%;
-  max-width: 400px; /* Giữ kích thước vừa phải */
+  max-width: 400px;
   background: #fff;
   border-radius: 14px;
   padding: 30px;
@@ -44,18 +44,18 @@
 .signup-form {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Giảm gap để gọn hơn */
+  gap: 15px;
 }
 
 .form-row {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Chia "Họ" và "Tên" thành 2 cột */
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
 .form-input {
   width: 100%;
-  padding: 12px 14px; /* Giảm padding để tiết kiệm không gian */
+  padding: 12px 14px;
   border: 1px solid #d1d5db;
   border-radius: 8px;
   font-size: 14px;
@@ -156,7 +156,7 @@
   }
 
   .form-row {
-    grid-template-columns: 1fr; /* Chuyển thành 1 cột trên mobile */
+    grid-template-columns: 1fr;
   }
 
   .form-input,
